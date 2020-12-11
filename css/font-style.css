@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+@font-face {
+    font-family: "OSBold";
+    src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OSRegular";
+    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OSSemiBold";
+    src: url("../fonts/Open_Sans/OpenSans-SemiBold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OSLight";
+    src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+    font-style: normal;
+    font-weight: normal;
+}

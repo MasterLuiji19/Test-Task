@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Test Task</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+    <div class="overlay-content">
+        <a href="javascript:void(0)">Menu 1</a>
+        <a href="javascript:void(0)">Menu 2</a>
+        <a href="javascript:void(0)">Menu 3</a>
+        <a href="javascript:void(0)">Menu 4</a>
+        <a href="javascript:void(0)">Menu 5</a>
+    </div>
+</div>
+
+    <header class="header">
+        <div class="header-wrap">
+            <a href="javascript:void(0)" class="logo blue">logo</a>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list__item">
+                        <select class="menu-select" name="menu" id="menu">
+                            <option value="menu-item">Menu</option>
+                            <option value="menu-item">Menu 1</option>
+                            <option value="menu-item">Menu 2</option>
+                            <option value="menu-item">Menu 3</option>
+                            <option value="menu-item">Menu 4</option>
+                        </select>
+                    </li>
+                    <li class="menu-list__item"><a href="javascript:void(0)">Menu 2</a></li>
+                    <li class="menu-list__item"><a href="javascript:void(0)">Menu 3</a></li>
+                    <li class="menu-list__item"><a href="javascript:void(0)">Menu 4</a></li>
+                </ul>
+            </nav>
+            <div class="nav-menu__right">
+                <select class="select" name="lang">
+                    <option value="lang-en">Eng</option>
+                    <option value="lang-ru">Rus</option>
+                </select>
+                <button class="menu-btn">Log in</button>
+                <button class="burger-menu" onclick="openNav()"></button>
+            </div>
+        </div>
+    </header>
+    <section class="price-section">
+        <h1 class="title">Lorem ipsum dolor sit amet</h1>
+        <div class="tab-wrap">
+            <button class="tab-btn active" onclick="openContent(event, 'tab-content__page1')">lorem</button>
+            <button class="tab-btn" onclick="openContent(event, 'tab-content__page2')">ipsum</button>
+        </div>
+        <div class="tab-content__wrap">
+            <div class="tab-content" id="tab-content__page1" style="display: flex;">
+                <div class="card animate-fading">
+                    <h3 class="card-name">lorem ipsum</h3>
+                    <p class="card-price">$ <span class="card-price__value">56.99</span> /mo</p>
+                    <div class="card-check_list">
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-1" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-1" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-1" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                    </div>
+                    <button class="card-btn secondary">buy now</button>
+                </div>
+                <div class="card animate-fading">
+                    <div class="flag"></div>
+                    <h3 class="card-name">lorem ipsum</h3>
+                    <p class="card-price">$ <span class="card-price__value">50.50</span> /mo</p>
+                    <span class="card-sale">Save 35%</span>
+                    <div class="card-check_list">
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-2" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-2" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-2" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                    </div>
+                    <button class="card-btn primary">buy now</button>
+                </div>
+                <div class="card animate-fading">
+                    <h3 class="card-name">lorem ipsum</h3>
+                    <p class="card-price">$ <span class="card-price__value">39.99</span> /mo</p>
+                    <span class="card-sale">Save 35%</span>
+                    <div class="card-check_list">
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-3" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-3" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-3" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                    </div>
+                    <button class="card-btn secondary">buy now</button>
+                </div>
+            </div>
+            <div class="tab-content" id="tab-content__page2">
+                <div class="card animate-fading">
+                    <h3 class="card-name">Ipsum lorem</h3>
+                    <p class="card-price">$ <span class="card-price__value">56.99</span> /mo</p>
+                    <div class="card-check_list">
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-1" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-1" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-1" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                    </div>
+                    <button class="card-btn secondary">buy now</button>
+                </div>
+                <div class="card animate-fading">
+                    <h3 class="card-name">Ipsum lorem</h3>
+                    <p class="card-price">$ <span class="card-price__value">56.99</span> /mo</p>
+                    <div class="card-check_list">
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-2" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-2" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-2" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                    </div>
+                    <button class="card-btn secondary">buy now</button>
+                </div>
+                <div class="card animate-fading">
+                    <h3 class="card-name">Ipsum lorem</h3>
+                    <p class="card-price">$ <span class="card-price__value">56.99</span> /mo</p>
+                    <div class="card-check_list">
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-3" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-3" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                        <label class="card-list__item">
+                            <input class="radio__input"  name="point-3" type="radio">
+                            <span class="radio__box"></span>
+                            <p class="item-point">Lorem</p>
+                            <p class="item-value">$ 99.99</p>
+                        </label>
+                    </div>
+                    <button class="card-btn secondary">buy now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages-section">
+        <h1 class="title">Ut enim ad minim veniam</h1>
+        <h2 class="subtitle">Quis nostrud exercitation ullamco laboris nisi ut aliquip</h2>
+        <div class="list-icons">
+            <img src="./img/icon01.svg" alt="icon-1">
+            <img src="./img/icon02.svg" alt="icon-2">
+            <img src="./img/icon03.svg" alt="icon-3">
+            <img src="./img/icon04.svg" alt="icon-4">
+            <img src="./img/icon05.svg" alt="icon-5">
+            <img src="./img/icon06.svg" alt="icon-6">
+            <img src="./img/icon07.svg" alt="icon-7">
+            <img src="./img/icon08.svg" alt="icon-8">
+            <img src="./img/icon09.svg" alt="icon-9">
+            <img src="./img/icon10.svg" alt="icon-10">
+            <img src="./img/icon11.svg" alt="icon-11">
+            <img src="./img/icon12.svg" alt="icon-12">
+            <img src="./img/icon13.svg" alt="icon-13">
+            <img src="./img/icon14.svg" alt="icon-14">
+        </div>
+        <div class="list-points">
+            <ul class="list-points__wrap">
+                <li class="list-advantages__item">Egestas erat imperdiet sed</li>
+                <li class="list-advantages__item">Rhoncus dolor purus non</li>
+                <li class="list-advantages__item">Interdum varius sit amet</li>
+                <li class="list-advantages__item">Egestas quis ipsum</li>
+                <li class="list-advantages__item">Nunc congue nisi vitae</li>
+                <li class="list-advantages__item">A scelerisque purus semper</li>
+                <li class="list-advantages__item">Eget mi proin sed libero</li>
+                <li class="list-advantages__item">Posuere urna nec tincidunt praesent</li>
+                <li class="list-advantages__item">Sed nisi lacus sed viverra</li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-info">
+                <p class="logo white">logo</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur</p>
+            </div>
+            <div class="nav-list__wrap">
+                <ul class="nav-list">
+                    <li>
+                        <span class="article">lorem</span>
+                    </li>
+                    <li><a class="footer-link" href="javascript:void(0)">Ipsum</a></li>
+                    <li><a class="footer-link" href="javascript:void(0)">Ipsum</a></li>
+                    <li><a class="footer-link" href="javascript:void(0)">Ipsum</a></li>
+                    <li><a class="footer-link" href="javascript:void(0)">Ipsum</a></li>
+                    <li><a class="footer-link" href="javascript:void(0)">Ipsum</a></li>
+                </ul>
+                <ul class="nav-list">
+                    <li>
+                        <span class="article">Lorem Ipsum</span>
+                    </li>
+                    <li><a class="footer-link" href="javascript:void(0)">Lorem</a></li>
+                    <li><a class="footer-link" href="javascript:void(0)">Lorem Ipsum</a></li>
+                    <li><a class="footer-link" href="javascript:void(0)">Ipsum</a></li>
+                    <li><a class="footer-link" href="javascript:void(0)">Lorem Ipsum</a></li>
+                    <li><a class="footer-link" href="javascript:void(0)">Lorem Ipsum</a></li>
+                </ul>
+                <ul class="nav-list">
+                    <li>
+                        <span class="article">lorem</span>
+                    </li>
+                    <li><a class="footer-link" href="javascript:void(0)">Lorem Ipsum</a></li>
+                    <li><a class="footer-link" href="javascript:void(0)">Lorem</a></li>
+                </ul>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <span class="article">lorem ipsum</span>
+                </li>
+                <li class="social-link">
+                    <a class="footer-link" href="javascript:void(0)"><img src="./img/fb.svg" alt="fb"></a>
+                    <a class="footer-link" href="javascript:void(0)"><img src="./img/inst.svg" alt="inst"></a>
+                    <a class="footer-link" href="javascript:void(0)"><img src="./img/yt.svg" alt="yt"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom__left">
+                <div class="dropdown">
+                    <div class="dropdown__wrap">
+                        <span>English</span>
+                        <img src="./img/arrow.svg" alt="arrow">
+                    </div>
+                    <div class="dropdown-content animate-fading">
+                        <div><a href="javascript:void(0)">English</a></div>
+                        <div><a href="javascript:void(0)">Russian</a></div>
+                    </div>
+                </div>
+                <span class="footer-span">Lorem ipsum</span>
+            </div>
+            <span class="footer-license">© 2020 Lorem | Lorem Ipsum</span>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
